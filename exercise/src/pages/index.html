@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
+    <title>Player Stats Card</title>
+</head>
+<body>
+    <section class="c-player-stats-card">
+        <form action="/" class="form">
+            <div class="form__select">
+                <select>
+                    <option value="select-player">Select a player...</option>
+                </select>
+            </div>
+        </form>
+        <figure>
+            <img src="" class="js-pImage " alt="Player picture">
+        </figure>
+        <div class="player-details">
+            <div class="player-details__batch"><div id="is-batch"></div></div>
+            <h1 class="js-firstname">Firstname</h1>
+            <h2 class="js-lastname">Surname</h2>
+            <table>
+                <tbody>
+                    <tr class="player-details__stats">
+                        <td>Appearances</td>
+                        <td class="js-appearance"></td>
+                    </tr>
+                    <tr class="player-details__stats">
+                        <td>Goals</td>
+                        <td class="js-goals"></td>
+                    </tr>
+                    <tr class="player-details__stats">
+                        <td>Assists</td>
+                        <td class="js-assists"></td>
+                    </tr>
+                    <tr class="player-details__stats">
+                        <td>Goals per match</td>
+                        <td class="js-goalsPerMatch"></td>
+                    </tr>
+                    <tr class="player-details__stats">
+                        <td>Passes per minute</td>
+                        <td class="js-passesPerMin"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+.c-player-stats-card {
+    font-family: arial;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 600px;
+    padding-top: 16px;
+    position: relative; 
+
+    .form {
+        text-align: center;
+
+        select {
+            font-size: 16px;
+            letter-spacing: 0px;
+            line-height: 36px;
+            width: calc(100% - 32px);
+            height: 40px;
+            text-align: left;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 10px;
+            background-color: $c-gallery;
+            appearance: none;
+            -webkit-appearance: none; 
+            -moz-appearance: none; 
+            -o-appearance: none;
+            border:none;
+
+            &::-ms-expand {
+                display: none;
+            }
+        }
+
+        &__select {
+            &:before {
+                content: "";
+                position: absolute;
+                pointer-events: none;
+                width: 0;
+                height: 0;
+                z-index: 1;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid $c-black;
+                margin-left: 95px;
+                margin-top: 18px;
+
+                @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                    margin-left: 250px;
+                }
+            }
+            
+            &:after {
+                content: "";
+                position: absolute;
+                pointer-events: none;
+                z-index: 2;
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid $c-gallery;
+                margin-left: 95px;
+                margin-top: -23px;
+
+                @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                    margin-left: 250px;
+                }
+            }
+        }
+    }
+
+    img {
+        width: 52%;
+        margin-top: 40px;
+        margin-left: 10px;
+        display: none;
+    }
+    
+    figure {
+        margin: 0px;
+    }
+
+    .player-details {
+        height: 306px;
+        background-color: $c-Razzmatazz;
+        width:100%;
+        bottom: 0;
+        position: absolute;
+        width: calc(100% - 32px);
+        padding: 16px 16px 0px 16px;
+
+        h1 {
+            font-size: 22px;
+            letter-spacing: 0px;
+            line-height: 36px;
+            color: $c-white;
+        }
+
+        h2 {
+            font-size: 16px;
+            letter-spacing: 0px;
+            line-height: 36px;
+            color: $c-white;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+
+            tr {
+                font-size: 16px;
+                width: 100%;
+                height: 40px;
+                background-color: $c-gallery;
+                border-bottom: 2px solid $c-Razzmatazz;
+                box-shadow: 0px 2px 18px 0px rgba(55,0,59,0.25);         
+
+                td {
+                    padding-left: 10px;
+                    color: $c-Cornflower-blue;
+                }
+
+                td:last-child {
+                    text-align: right;
+                    padding-right: 10px;
+                    font-size: 19px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        &__batch {
+            width: 82px;
+            height: 82px;
+            border-radius: 41px;
+            background-color: $c-white;
+            position: absolute;
+            right: 15px;
+            top: -28px;
+            overflow: hidden;
+        }
+    }
+
+    #is-batch {
+        width: 125%;
+        height: 125%;
+        margin-left: auto;
+        margin-right: auto;
+        zoom: 0.8;
+        -moz-transform: scale(0.8);
+        -moz-transform-origin: 0 0;
+    }
+
+    .is-team-21 {
+        background: url(../img/badges_sprite.png) 702px 99px;
+    }
+
+    .is-team-11 {
+        background: url(../img/badges_sprite.png) 402px -696px;
+    }
+
+    .is-team-12 {
+        background: url(../img/badges_sprite.png) 602px -796px;
+    }
+
+    .is-team-1 {
+        background: url(../img/badges_sprite.png) -99px -96px;
+    }
+
+    .is-team-26 {
+        background: url(../img/badges_sprite.png) 2px 2px;
+    }
+    
+}

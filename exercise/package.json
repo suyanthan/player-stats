@@ -1,0 +1,43 @@
+{
+  "name": "frontplate",
+  "version": "0.0.3",
+  "description": "a frontend boilerplate with gulp",
+  "main": "index.js",
+  "scripts": {
+    "build-dev": "gulp build --env development",
+    "build": "gulp build --env production",
+    "start": "gulp serve",
+    "watch": "gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/dkbnguyen/frontplate#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "browserify": "^14.4.0",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.4.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-font-icon": "^1.0.4",
+    "gulp-if": "^2.0.2",
+    "gulp-image": "^4.3.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-param": "^1.0.3",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-trimlines": "^1.0.1",
+    "gulp-tslint": "^8.1.1",
+    "gulp-uglify": "^3.0.0",
+    "hoverintent": "^2.0.0",
+    "typescript": "^2.3.4",
+    "minimist": "^1.2.0",
+    "run-sequence": "^1.2.2",
+    "tsify": "^3.0.1",
+    "tslint": "^5.4.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
